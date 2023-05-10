@@ -2,6 +2,10 @@
   visibility: hidden;
 }
 
+.sidebarContainer {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .openMenu {
     visibility: visible;
@@ -11,6 +15,7 @@
 
   .sidebarContainer {
     position: absolute;
+    display: block  ;
     top: 0;
     left: 0;
     width: 100%;
