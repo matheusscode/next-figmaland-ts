@@ -2,7 +2,7 @@ import Button from "../Button";
 import styles from "./Footer.module.css";
 import { MapsGroups, filterMaps } from "./maps";
 import { socialIcons, socialTags } from "./social";
-import { AiOutlineArrowLeft, AiOutlineArrowRight} from "react-icons/ai"
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { useRef } from "react";
 
 function Carousel() {
@@ -50,7 +50,7 @@ function Carousel() {
   return (
     <div className={styles.carouselContainer}>
       <Button
-        text={<AiOutlineArrowLeft/>}
+        text={<AiOutlineArrowLeft />}
         event={handleScrollLeft}
         newStyle={true}
         buttonStyle={styles.buttonOne}
@@ -59,7 +59,7 @@ function Carousel() {
         {renderMaps()}
       </div>
       <Button
-        text={<AiOutlineArrowRight/>}
+        text={<AiOutlineArrowRight />}
         event={handleScrollRight}
         newStyle={true}
         buttonStyle={styles.buttonTwo}
@@ -102,7 +102,7 @@ export default function Footer() {
           <ul className={styles.socialTagsContainer}>
             {socialTags.map((tag) => (
               <li className={styles.tagsList} key={tag.id}>
-                <a href={tag.link}>
+                <a href={tag.link} target="_blank" rel="noreferrer">
                   {" "}
                   <span>
                     <tag.icon />
@@ -115,7 +115,7 @@ export default function Footer() {
           <ul className={styles.socialIconsContainer}>
             {socialIcons.map((icon) => (
               <li className={styles.iconsList} key={icon.id}>
-                <a href={icon.link}>
+                <a href={icon.link} target="_blank" rel="noreferrer">
                   <span>
                     <icon.icon />
                   </span>

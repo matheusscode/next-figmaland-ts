@@ -24,13 +24,13 @@ export const socialTags: SocialTag[] = [
     id: 1,
     icon: AiFillGooglePlusCircle,
     text: "matheussdev3@gmail.com",
-    link: "",
+    link: "https://mail.google.com/mail/u/1/#inbox?compose=CllgCJfrKnHwdrtMzGlGBMGMnRbsBdJCTRsHpTkJvfxhPzjHFJlmBNDPvBvHcgbGlbkHrBdGQDq",
   },
   {
     id: 2,
     icon: BsFillTelephoneOutboundFill,
     text: "+55 (92) 99982-7649",
-    link: "",
+    link: "https://wa.me/message/HDP33S5LPCCNA1",
   },
 ];
 
@@ -38,17 +38,17 @@ export const socialIcons: SocialIcon[] = [
   {
     id: 1,
     icon: AiFillGithub,
-    link: "#",
+    link: "https://github.com/matheusscode",
   },
   {
     id: 2,
     icon: AiFillYoutube,
-    link: "#",
+    link: "https://www.youtube.com/channel/UCiH_b6nMZNRYvRB86ApXKNA",
   },
   {
     id: 3,
     icon: AiFillLinkedin,
-    link: "#",
+    link: "https://www.linkedin.com/in/matheussfigueiredo/",
   },
 ];
 

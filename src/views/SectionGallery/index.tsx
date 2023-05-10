@@ -19,7 +19,7 @@ export default function Gallery() {
     ));
 
   return (
-    <section>
+    <section id="gallery">
       <div className={styles.container}>
         <SectionHeader
           title="Gallery"

@@ -14,12 +14,12 @@
 }
 
 .cardContainer:hover {
-  color: #101010;
-  background-color: #fff;
+  color: #fff;
+  background-color:  #43b6ff;
 }
 
 .cardContainer:hover .cardHeader .avatar {
-  border-color: #101010;
+  border-color: #BC41E4;
 }
 
 .cardContainer:hover .comment {

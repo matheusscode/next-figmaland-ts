@@ -34,6 +34,7 @@
 .nav {
   display: flex;
   background: transparent;
+  gap: 1rem;
 }
 
 .list {
@@ -41,6 +42,7 @@
   list-style-type: none;
   gap: 2rem;
   background: transparent;
+
 }
 
 .options {
@@ -53,7 +55,26 @@
 .listItem {
   padding: 0.4rem 0.8rem;
   background: transparent;
+  position: relative;
 }
+
+.listItem:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #cb3dd4;
+  left: 0;
+  bottom: 0;
+  transition: width 0.4s ease;
+}
+
+
+
+.listItem:hover:before {
+  width: 100%;
+}
+
 
 .link {
   font-size: 1.05rem;

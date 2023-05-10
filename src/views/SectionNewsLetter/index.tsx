@@ -4,7 +4,7 @@ import image from "../../../public/assets/images/contents/website-screen.svg";
 
 export default function Newsletter() {
   return (
-    <section>
+    <section id="contact">
       <div className={styles.container}>
         <div className={styles.cardContainer}>
           <CardForNewsletter

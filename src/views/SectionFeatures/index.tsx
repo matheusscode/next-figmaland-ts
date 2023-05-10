@@ -20,8 +20,8 @@ export default function Features() {
     ));
 
   return (
-    <section>
-      <div className={styles.container}>
+    <section >
+      <div id="features" className={styles.container}>
         <SectionHeader
           title="FEATURES"
           paragraph="Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan they schedule."

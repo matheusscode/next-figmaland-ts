@@ -18,7 +18,7 @@ export default function Content() {
     ));
 
   return (
-    <section>
+    <section id="contents">
       <div className={styles.container}>
         <SectionHeader
           title="Contents"
