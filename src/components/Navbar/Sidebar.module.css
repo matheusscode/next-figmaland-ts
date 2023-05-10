@@ -1,0 +1,145 @@
+.hamburger {
+  opacity: 0;
+}
+
+@keyframes down {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.4s;
+    flex-direction: column;
+    background: transparent;
+    padding: 1rem;
+    position: relative;
+    right: 10px;
+    width: 40px;
+    height: 30px;
+  }
+
+  .hamburger .line:nth-child(1)::before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .hamburger .line:nth-child(2)::before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 14px;
+    height: 4px;
+    width: 30px;
+    background-color: #fff;
+  }
+
+  .hamburger .line:nth-child(3)::before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    height: 4px;
+    width: 20px;
+    background-color: #fff;
+  }
+
+  .sidebarContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    position: fixed;
+    animation: down 0.6s ease;
+    backdrop-filter: blur(2px);
+  }
+
+  .sidebarSubContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  .sidebarHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #505050;
+    padding: 1rem 2rem 0;
+  }
+
+  .sidebarHeader .image {
+    width: 140px;
+    margin-top: 0.5rem;
+  }
+
+  .sidebarHeader .closeMenu {
+    color: #fff;
+    font-size: 2.6rem;
+  }
+
+  .sidebarBody {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 78vh;
+    justify-content: center;
+  }
+
+  .list {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .sidebarBody .list .listItem .link {
+    font-size: 2rem;
+  }
+
+  .sidebarFooter {
+    border-top: 1px solid #505050;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 2rem 4rem 0;
+    margin: 0 auto;
+  }
+
+  .sidebarFooter ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .sidebarFooter ul li a {
+    font-size: 2.4rem;
+  }
+
+  .credits {
+
+    text-align: center;
+    margin-top: 0.6rem;
+  }
+
+  .credits span {
+    font-weight: 600;
+  }
+}

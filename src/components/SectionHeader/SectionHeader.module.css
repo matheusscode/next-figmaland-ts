@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  max-width: 520px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+  color: #fff;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  font-weight: 400;
+}

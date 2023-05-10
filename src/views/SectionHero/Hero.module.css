@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+  color: #ffff;
+  margin-top: 4rem;
+  position: relative;
+  height: 100%;
+  padding: 4rem;
+}
+
+.content,
+.options {
+  z-index: 2;
+}
+
+.content {
+  text-align: center;
+  max-width: 500px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1 {
+  max-width: 450px;
+  font-size: 3rem;
+}
+
+.content p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.options {
+  display: flex;
+  gap: 1rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.options .buttonOne {
+  background-color: #4452fe;
+  border: 1px solid #4452fe;
+  padding: 0.8rem 2.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  color: #fff;
+  position: relative;
+  width: 100%;
+}
+
+.options .buttonOne:hover {
+  background: transparent;
+  border-color: #ffff;
+  transform: translate(-2px, -2px);
+}
+
+.background {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  object-fit: cover;
+  height: 1200px;
+  background-attachment: fixed;
+}
+
+@media (max-width: 1000px) {
+  .options {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,182 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 4rem;
+  gap: 4rem;
+}
+
+.maps {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 600px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 1rem;
+}
+
+.listItem h1 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.listItem .mapList .mapListItem a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.socialTagsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+
+.tagsList a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.tagsList:hover a {
+  background-color: #101010;
+}
+
+.tagsList a span {
+  font-size: 1.6rem;
+}
+
+.socialIconsContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.iconsList a {
+  width: 10px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  font-size: 2rem;
+}
+
+.iconsList:hover a {
+  background-color: #101010;
+}
+
+.mapForMobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .list {
+    display: none;
+  }
+
+  .listMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
+  }
+
+  .listMobile .listItem {
+    width: 55vw;
+    padding: 4rem;
+  }
+
+  .mapForMobile {
+    display: block;
+    width: 100%;
+  }
+
+  .carouselContainer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 600px;
+    min-height: 300px;
+  }
+
+  .scroll {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .buttonOne {
+    position: absolute;
+    left: -10px;
+    top: 43%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2.6rem;
+    z-index: 2;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #101010;
+  }
+
+  .buttonTwo {
+    position: absolute;
+    right: -10px;
+    top: 43%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2.6rem;
+    z-index: 2;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #101010;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    padding: 2rem;
+  } 
+
+  .listMobile .listItem {
+    width: 95vw;
+    padding: 4rem;
+  }
+}

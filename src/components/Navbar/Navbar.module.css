@@ -1,0 +1,88 @@
+.containerNotFixed {
+  width: 100%;
+  padding: 1rem;
+}
+
+@keyframes toFixed {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.containerFixed {
+  position: fixed;
+  top: 0;
+  background-color: #101010;
+  z-index: 999;
+  animation: toFixed 1.4s;
+  width: 100%;
+}
+
+.subContainer {
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.nav {
+  display: flex;
+  background: transparent;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  background: transparent;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  gap: 2rem;
+}
+
+.listItem {
+  padding: 0.4rem 0.8rem;
+  background: transparent;
+}
+
+.link {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.limitAreaButton {
+  max-width: 120px;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .options {
+    justify-content: right;
+    width: 100%;
+  }
+
+  .image {
+    width: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .image {
+    width: 120px;
+  }
+}
